@@ -1,0 +1,141 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --cyan: hsl(158, 40%, 49%);
+}
+.tarjeta{
+    display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width:70vw;
+      
+        margin-top: 50px;
+        
+        margin-bottom: 50px;
+        background-color: var(--White);
+    }
+
+
+    .photo{
+        width:350px;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius:18px;
+        content:url("./images/image-product-desktop.jpg");
+    }
+
+    .cardB{
+width:250px;
+margin-left: 5vw;
+max-height: auto;
+    }
+
+
+    .txt{
+        font-family: 'Montserrat', sans-serif;   
+    color:var(--Dark-grayish-blue);
+    font-size: 15px;
+    }
+   .titulo{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: var(--Very-dark-blue);
+    margin-bottom: 20px;
+    
+   }
+
+   .preview{
+    font-size: 13px;
+    margin-bottom: 1rem;
+   }
+   .precio{
+    color: var(--cyan);
+   }
+
+   .button{
+    background-color: var(--cyan);
+    color:var(--White);
+    justify-content: center;
+    text-align: center;
+    border-radius:5px;
+    font-family: 'Montserrat', sans-serif; 
+    padding:5px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+   }
+
+   .button:hover{
+    background-color: var(--Dark-cyan);
+   }
+   .tach{
+    color:var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif; 
+   margin-bottom: 0px;
+   font-size: 15px;
+  
+  
+   }
+
+   .pres{
+    display:flex;
+   margin: auto;
+   }
+   body{
+    width:100%;
+    background-color:var(--Cream) ;
+   }
+
+
+   @media only screen and (max-width: 800px) {
+   
+body{
+    display:block;
+
+      
+}
+    .photo{
+        border-top-right-radius:15px ;
+        border-top-left-radius:15px ;
+        border-bottom-left-radius:0px;
+        width:90%;
+        height:90%;
+        content:url("./images/image-product-mobile.jpg");
+        margin:auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+    }
+
+
+    .tarjeta{
+        max-width: 450px;
+        min-width: 450px;
+        display:block;
+      
+        box-sizing: content-box;
+    
+        margin-top: 20px;
+        padding: 15px;
+      }
+   
+      .cardB{
+        width: 80%;
+      }
+
+
+.button{
+    margin-right: 5px;
+    margin-left: -5px;
+ width: 90%;
+}
+
+
+
+
+
+
+
+  }
